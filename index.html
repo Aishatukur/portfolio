@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha Ahmad Tukur- portfolio</title>
+    <link rel="stylesheet" href="icon/icofont.min.css">
+    <STYLE>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quintessentail', cursive;
+        }
+
+        .navigation {
+            position: fixed;
+            background: #4c0c47;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navigation div a {
+            color: #ffffff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .navigation div {
+            margin: 0 15px;
+            color: white;
+        }
+        .hero{
+            background-color: #4c0c5c;
+            height:100vh ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hero p{
+            color: #ffffff;
+            font-size: 20px;
+            text-align: center;
+        }
+        .container{
+            margin:1.5em 4em ;
+        }
+        .container h1, .container p{
+            text-align: center;
+        }
+        .skills{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        .skill{
+            width: 200px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        .skill:hover{
+            background: #4c0c5c;
+            color:#ffffff ;
+        }
+        .projects {
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .project{
+            width: 30%;
+            text-align: center;
+            margin: 15px;
+        }
+        .project a:hover{
+            border-bottom: 2.5px #4c0c5c solid;
+            border-bottom-width: thick;
+        }
+        .project a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .text{
+            font-size: 18px;
+        }
+        .footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: #4c0c5c;
+            margin-top: 15px;
+            padding: 15px;
+        }
+        .footer div{
+            width:50%;
+        }
+        input[type=text],input[type=email],textarea,input[type=button]{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid#ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=button]:hover{
+            background-color: #4c0c5c;
+            color: #ffffff;
+        }
+
+
+        .hero img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            margin-bottom: 10px;
+        }
+        .social{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .social li{
+            list-style-type: none;
+        }
+        .social a{
+            text-decoration: none;
+            color:white;
+            margin: 5px 15px;
+        }
+        .social i{
+            font-size: 20px;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <div class="navigation">
+        <div><a href="index.html">AISHA</a></div>
+        <div>||</div>
+        <div><a href="#who">WHO</a></div>
+    </div>
+    <div>
+        <div class="hero">
+            <img src="IMG_E8539.JPG" alt="my picture">
+            <p>Assalamu alaikum, i'm Aisha t. A frontend developer</p>
+            <ul class="social">
+                <li><a href="http://facebook.com"><i class="icofont-facebook"></i></a></li>
+                <li><a href="http://instagram.com"><i class="icofont-instagram"></i></a></li>
+                <li><a href="http://twitter.com"><i class="icofont-twitter"></i></a></li>
+            </ul>
+
+
+        </div>
+    </div>
+    <div class="container" id="who">
+        <h1>WHO</h1>
+        <P class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maiores autem iusto quos nisi molestias rerum fuga repellat laboriosam nostrum. Fugit eum aspernatur temporibus veniam magnam, animi neque rem vero.</P>
+</div>
+<div class="container">
+    <h1>SKILLS</h1>
+    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam nisi praesentium, unde laudantium deleniti hic optio repellat atque odit ab architecto? Facere voluptatum aspernatur dolorum! Magnam modi quo recusandae architecto!</p>
+    <div class="skills">
+        <div class="skill"><h2>html</h2></div>
+        <div class="skill"><h2>css</h2></div>
+        <div class="skill"><h2>javascript</h2></div>
+    </div>
+</div>
+<div class="container">
+    <h1>PROJECTS</h1>
+    <P class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem atque laborum molestiae hic sint fugiat totam esse natus assumenda aliquid?</P>
+    <div class="projects">
+        <div class="project"><a href="#">project 1</a></div>
+        <div class="project"><a href="#">project 2</a></div>
+        <div class="project"><a href="#">project 3</a></div>
+        <div class="project"><a href="#">project 4</a></div>
+    </div>
+</div>
+
+<div class="footer">
+    <h1 style="text-align: center; color: white;">CONTACT ME</h1>
+    <form netlify>
+        <input type="text" name="" placeholder="Enter Fullname">
+        <input type="email" name="" placeholder="Enter Email">
+        <textarea></textarea>
+        <input type="button" name="" value="Submit">
+    </form>
+    <p style="color: white; margin-top: 10px;">crafted with <i class="bi bi-heart"></i>by Aisha ahmad tukur</p>
+</div>
+</body>
+
+</html>
